@@ -9,7 +9,7 @@ import json
 
 ENDPOINT_GET_TRACKS = "https://api.spotify.com/v1/me/tracks"
 ENDPOINT_DELETE_TRACKS = "https://api.spotify.com/v1/me/tracks"
-BEARER = "BQBBmtUUtHkf5ge5_tMGiWcvzIhV-7nftIpMUGCaOaN8zLegs0MMWdtUUXKkI5_ugZNmlLM4u0mm456fDfrXwqB3LR_gELr0774iyvcUifKvYHT87UMf5yNjomdL0VloNkQgjG5IpPLFNE-e6wV0Qkuq_Do80Uok650RMSQTBOyqVJ48vcpHE8b5Cl1RGx3Uqp9JB-uL1IAnowH1B7jN2kKw-OG49x_npiKtwOY2wPmPNsL692KKmRBmC8J7MD_nq6zuusFUNcOTHGLtxlE"
+BEARER = "BQDq49l2VSkM6dddmrgdFHAe_B3LFCWEZIXUvArXIYA7fGbGaGVyHHO_hkHURDMn7KGcfzBNNrkzB1jrABs3zvFX7A7T3TtQc3TuZXyM7sbjMm6y-ryGFmVOMBmeNWVx4EWFEJ66uuyfBHun6crrvEkewLgV10s8QJ291nhmSnpHGWGZhfejRPRBA9OmT2w0qIXi1Og5Efcs3ilsST8cbzazswZePPP3xbEv617ToAieJJlUIRJwFjz39rPkSgFz2toj2Jbe0NF_gMa4qFg"
 headers = {"Authorization": "Bearer " + BEARER}
 
 
@@ -28,3 +28,7 @@ def get_track_ids():
 def delete_track(ids):
     response = requests.delete(ENDPOINT_DELETE_TRACKS, headers=headers, data=json.dumps({'ids': ids}))
     print(response)
+
+
+tracks = get_track_ids()
+delete_track(tracks)
