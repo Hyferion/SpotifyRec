@@ -1,4 +1,4 @@
-from dataAnalysis import read_csv_to_df, split_df
+from ModelTraining.dataAnalysis import read_csv_to_df, split_df
 import tensorflow as tf
 import numpy as np
 from tensorflow.keras import layers

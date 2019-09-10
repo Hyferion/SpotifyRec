@@ -2,10 +2,8 @@ import requests
 import json
 
 
-"""Script to delete your spotify saved tracks. Used to get status quo for creating a dataset.
+"""Script to delete your Spotify saved tracks. Used to get status quo for creating a dataset.
 --- USE WITH CAUTION --- """
-
-
 
 ENDPOINT_GET_TRACKS = "https://api.spotify.com/v1/me/tracks"
 ENDPOINT_DELETE_TRACKS = "https://api.spotify.com/v1/me/tracks"

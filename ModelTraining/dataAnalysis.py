@@ -52,4 +52,6 @@ class SGDCClassifier:
         print(acc)
 
 
-read_csv_to_df("./file.csv")
+df = read_csv_to_df("./file.csv")
+
+df.head()
