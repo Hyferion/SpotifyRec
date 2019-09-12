@@ -1,12 +1,12 @@
-from ModelTraining.dataAnalysis import read_csv_to_df, split_df
+from tensorflow import keras
+from ModelTraining.dataAnalysis import read_csv_to_df
 import tensorflow as tf
 import numpy as np
-from tensorflow.keras import layers
 
 print(tf.version.VERSION)
 print(tf.keras.__version__)
 
-df = read_csv_to_df("./file.csv")
+df = read_csv_to_df("./Data/file.csv")
 sets = split_df(54, df)
 training_set = sets['training_set']
 print(training_set.shape)
@@ -18,8 +18,8 @@ test_set_label = sets['test_set_label']
 print(test_set_label)
 
 model = tf.keras.Sequential()
-model.add(layers.Dense(32, input_shape=(10,)))
-model.add(layers.Dense(2, activation='softmax'))
+model.add(keras.layers.Dense(32, input_shape=(10,)))
+model.add(keras.layers.Dense(2, activation='softmax'))
 model.compile(optimizer=tf.compat.v1.train.RMSPropOptimizer(0.01), loss=tf.keras.losses.sparse_categorical_crossentropy,
               metrics=['accuracy'])
 model.fit(training_set, training_set_label, epochs=10)

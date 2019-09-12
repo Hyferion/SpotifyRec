@@ -9,6 +9,7 @@ headers = {"Authorization": "Bearer " + BEARER}
 
 
 def create_liked_dict(collectedTracks):
+    """Create a dict to match the liked feature with the other features"""
     likedict = {}
 
     for track in collectedTracks:
@@ -18,6 +19,7 @@ def create_liked_dict(collectedTracks):
 
 
 def get_features_for_tracks(collectedTracks, likedict):
+    """ Bottleneck method to feed max. 100 tracks to the request"""
     tracks = []
 
     while len(tracks) != len(collectedTracks):
@@ -29,6 +31,9 @@ def get_features_for_tracks(collectedTracks, likedict):
 
 
 def send_request(collectedTracks, likedict):
+    """Gets features for tracks. Max. size of the list is 100"""
+    list_of_features = ['duration_ms', 'danceability', 'energy', 'key', 'loudness', 'mode', 'acousticness',
+                        'instrumentalness', 'liveness', 'valence', 'tempo']
     finalList = []
     coltracks = []
 
@@ -43,18 +48,9 @@ def send_request(collectedTracks, likedict):
     audio_features = response['audio_features']
     for audio in audio_features:
         dictio = {}
-        dictio['duration_ms'] = audio['duration_ms']
-        dictio['danceability'] = audio['danceability']
-        dictio['energy'] = audio['energy']
-        dictio['key'] = audio['key']
-        dictio['loudness'] = audio['loudness']
-        dictio['mode'] = audio['mode']
-        dictio['acousticness'] = audio['acousticness']
-        dictio['instrumentalness'] = audio['instrumentalness']
-        dictio['liveness'] = audio['liveness']
-        dictio['valence'] = audio['valence']
-        dictio['tempo'] = audio['tempo']
         dictio['liked'] = likedict[audio['id']]
+        for feature in list_of_features:
+            dictio[feature] = audio[feature]
 
         finalList.append(dictio)
 
@@ -62,6 +58,7 @@ def send_request(collectedTracks, likedict):
 
 
 def save_list_to_csv(finalList):
+    """Saves the dataset as a csv"""
     df = pd.DataFrame(finalList)
     df.to_csv("./Data/file.csv", sep=',', index=False)
 

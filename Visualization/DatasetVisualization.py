@@ -37,7 +37,7 @@ def histo_plot_frequency(dataset, feature):
     """
     fig, ax = plt.subplots()
 
-    ax.hist(dataset[feature])
+    ax.hist(dataset[feature].to_string())
     ax.set_title('Number of Songs -- ' + feature)
     ax.set_xlabel(feature)
     ax.set_ylabel('Number of Songs')
@@ -64,7 +64,7 @@ def bar_plot_multiple_features(dataset):
     features_falses = []
 
     for feature in features:
-        features_trues.append(trues[feature].average())
+        features_trues.append(trues[feature].mean())
         print(trues[feature].mean())
         features_falses.append(falses[feature].mean())
         print(falses[feature].mean())
@@ -85,6 +85,6 @@ def bar_plot_multiple_features(dataset):
 dataset = pd.read_csv('./Data/file.csv')
 print(dataset.head())
 
-scatter_plot_two_features(dataset, ['acousticness', 'energy'])
-# histo_plot_frequency(dataset, 'tempo')
-# bar_plot_multiple_features(dataset)
+#scatter_plot_two_features(dataset, ['acousticness', 'energy'])
+histo_plot_frequency(dataset, 'liked')
+#bar_plot_multiple_features(dataset)

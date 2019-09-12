@@ -2,6 +2,7 @@ import json
 
 
 def read_json_for_user(file, userid):
+    """ Reads a JSON file and returns a a list of tracks"""
     with open(file) as json_file:
         data = json.load(json_file)
         tracks = data[userid]['Tracks']
