@@ -27,7 +27,8 @@ class KNeighbours(BaseClassifier):
 class ForestClassifier(BaseClassifier):
 
     def __init__(self):
-        self.classifier = RandomForestClassifier(random_state=42)
+        self.classifier = RandomForestClassifier(n_estimators=1000, max_depth=32,
+                                                 min_samples_split=150)
 
 
 class SGDCClassifier(BaseClassifier):
@@ -39,14 +40,14 @@ class SGDCClassifier(BaseClassifier):
 class SVCClassifier(BaseClassifier):
 
     def __init__(self):
-        self.svc_clf = SVC(kernel="linear", C=0.025)
+        self.classifier = SVC()
 
 
 class SequentialClassifier():
 
     def __init__(self):
         self.model = tf.keras.Sequential()
-        self.model.add(keras.layers.Dense(32, input_shape=(10,)))
+        self.model.add(keras.layers.Dense(32, input_shape=(5,)))
         self.model.add(keras.layers.Dense(2, activation='softmax'))
         self.model.compile(optimizer=tf.compat.v1.train.RMSPropOptimizer(0.01),
                            loss=tf.keras.losses.sparse_categorical_crossentropy,

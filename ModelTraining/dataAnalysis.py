@@ -1,5 +1,6 @@
 from sklearn.metrics import recall_score, precision_score
-from ModelTraining.Classifiers import ForestClassifier, SequentialClassifier
+from ModelTraining.Classifiers import ForestClassifier, SequentialClassifier, SVCClassifier
+from ModelTraining.Evaluation import calculate_accuracy, calculate_recall, calculate_precision, calculate_all_metrics
 from ModelTraining.Preprocessing import read_csv_to_df, undersampling_dataset, shuffle_dataset, \
     split_dataset, define_parameters
 from Visualization.ConfusionMatrix import plot_confusion_matrix
@@ -12,23 +13,22 @@ df = define_parameters(df, ['acousticness', 'danceability', 'energy', 'instrumen
 
 undersampled_dataset = undersampling_dataset(df, 150)
 shuffled_dataset = shuffle_dataset(undersampled_dataset)
-dataset = split_dataset(120, shuffled_dataset)
+dataset = split_dataset(250, shuffled_dataset)
 
 forestcf = ForestClassifier()
 forestcf.train_classifier(dataset['training_set'], dataset['training_set_label'])
 predicted = forestcf.test_classifier(dataset['test_set'])
 
-accuracy = np.mean(predicted == dataset['test_set_label'])
-print("Accuracy: " + str(accuracy))
+calculate_all_metrics(dataset['test_set_label'], predicted)
 
-recall_score = recall_score(dataset['test_set_label'], predicted)
-print("Recall: " + str(recall_score))
-precision_score = precision_score(dataset['test_set_label'], predicted)
-print("Precision: " + str(precision_score))
+svg_cf = SVCClassifier()
+svg_cf.train_classifier(dataset['training_set'], dataset['training_set_label'])
+predicted = svg_cf.test_classifier(dataset['test_set'])
+calculate_all_metrics(dataset['test_set_label'], predicted)
 
-sequ_cf = SequentialClassifier()
-sequ_cf.train_classifier(dataset['training_set'], dataset['training_set_label'])
-sequ_cf.test_classifier(dataset['test_set'], dataset['test_set_label'])
+# sequ_cf = SequentialClassifier()
+# sequ_cf.train_classifier(dataset['training_set'], dataset['training_set_label'])
+# sequ_cf.test_classifier(dataset['test_set'], dataset['test_set_label'])
 
 # plot_confusion_matrix(dataset['test_set_label'], predicted, classes=['Disliked', 'Liked'])
 # k_neig = KNeighbours()
