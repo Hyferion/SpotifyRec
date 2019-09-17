@@ -1,10 +1,11 @@
 import pandas as pd
 import requests
 
+from Scripts.read_database import read_database
 from Scripts.read_json_for_user import read_json_for_user
 
 ENDPOINT_TRACK_FEATURE = "https://api.spotify.com/v1/audio-features"
-BEARER = "BQB3NsZb0bQdqRT7P83YagLvjRbuOxYkgoquHqrAt9bsEuf1D_B7_DKvyMa6PthDHiy9i275waOBnwFDwutfgH2BRhmYx8_13YTNBLbhzaSew1cZlC8q9JRcXe_P2XJGSNjUq9ko59JK4JvjCdZPsJ3fuKvuJg7-Gqb1IDWxw3RimyI0FFos-onphAy1FyZe2NkMr0KZA3xN4rH7pFkqTtV-dpuWE4iNcHS5k7K9Cbg2HTXiVeT98pqWGZDRrVEer31r5et48-Fl9Zul5OQ"
+BEARER = "BQBZ5MwauBoRR-fTxYTHOuGZngirK2R-N1QcTPIazdMEIffsyIijxNbr6jXi7p7pDhJY0dvgHvY0Gy2NVCG1JhWUKTYMnmEGegdH6tzJW3kUL1fBtBqtFDd2mnwSzGT6FiN2UD4gmt4025uMwv3VfSnFCuCuKCdVz66AEO15l6ra3nBrkkQqY6oAVthHSdIrNETAY2bsnP8U8Nu6tjIhmVeVWRTiDF0bMMZxcljNZnXfgpT8PH2ijhifDwsf3vbzTP28H2r3lSHckx-Rxzo"
 headers = {"Authorization": "Bearer " + BEARER}
 
 
@@ -60,10 +61,11 @@ def send_request(collectedTracks, likedict):
 def save_list_to_csv(finalList):
     """Saves the dataset as a csv"""
     df = pd.DataFrame(finalList)
-    df.to_csv("./Data/file.csv", sep=',', index=False)
+    df.to_csv("../Data/file.csv", sep=',', index=False)
 
 
-collectedTracks = read_json_for_user("spotifyrec-36551-export.json", "1112101592")
+read_database()
+collectedTracks = read_json_for_user("data.json", "1112101592")
 likedict = create_liked_dict(collectedTracks)
 finalList = get_features_for_tracks(collectedTracks, likedict)
 save_list_to_csv(finalList)

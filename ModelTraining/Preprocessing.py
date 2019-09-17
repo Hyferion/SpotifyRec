@@ -27,13 +27,10 @@ def shuffle_dataset(df):
 
 
 def undersampling_dataset(df, size):
-    # Put all the fraud class in a separate dataset.
     underrepresented_class = df.loc[df['liked'] == False]
 
-    # Randomly select n observations
     overrepresented_class = df.loc[df['liked'] == True].sample(n=size, random_state=42)
 
-    # Concatenate both dataframes again
     normalized_df = pd.concat([underrepresented_class, overrepresented_class])
 
     return normalized_df
