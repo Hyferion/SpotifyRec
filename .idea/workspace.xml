@@ -2,20 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5dbb50a5-26fd-41ee-a9f3-9dc6aea4aa24" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/SpotifyReco.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SpotifyReco.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/DatabaseExports/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/Data/DatabaseExports/data.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/file.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Data/file.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ModelTraining/Classifiers.py" beforeDir="false" afterPath="$PROJECT_DIR$/ModelTraining/Classifiers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ModelTraining/TensorFlow_Try.py" beforeDir="false" afterPath="$PROJECT_DIR$/ModelTraining/TensorFlow_Try.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ModelTraining/dataAnalysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/ModelTraining/dataAnalysis.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/SpotifyManipulations/DeleteEverythingFromSavedTracks.py" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/SpotifyManipulations/DeleteEverythingFromSavedTracks.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/SpotifyManipulations/MovePlaylistToSavedTracks.py" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/SpotifyManipulations/MovePlaylistToSavedTracks.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/countClasses.py" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/countClasses.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/data.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/getFeaturesFromSpotify.py" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/getFeaturesFromSpotify.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/read_database.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/read_json_for_user.py" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/firebase_database.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Visualization/DatasetVisualization.py" beforeDir="false" afterPath="$PROJECT_DIR$/Visualization/DatasetVisualization.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -59,18 +47,18 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="csv" value="11" />
-          <entry key="jpg" value="15" />
+          <entry key="jpg" value="20" />
           <entry key="json" value="17" />
-          <entry key="py" value="185" />
+          <entry key="py" value="193" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSV" value="10" />
-          <entry key="Image" value="15" />
+          <entry key="Image" value="20" />
           <entry key="JSON" value="17" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Python" value="185" />
+          <entry key="Python" value="193" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -78,14 +66,14 @@
           <entry key="Python Console" value="17" />
           <entry key="csv" value="4" />
           <entry key="dummy" value="101" />
-          <entry key="py" value="22460" />
+          <entry key="py" value="22584" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSV" value="4" />
           <entry key="PLAIN_TEXT" value="101" />
-          <entry key="Python" value="22461" />
+          <entry key="Python" value="22585" />
           <entry key="SQL" value="16" />
         </counts>
       </usages-collector>
@@ -97,14 +85,39 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Scripts/playlist_scrambler.py">
+        <entry file="file://$PROJECT_DIR$/Visualization/ConfusionMatrix.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-50">
-              <caret line="8" column="44" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
+            <state relative-caret-position="96">
+              <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Visualization/DatasetVisualization.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
               <folding>
-                <element signature="e#0#15#0" expanded="true" />
-                <marker date="1578234032729" expanded="true" signature="1840:1841" ph="..." />
-                <marker date="1578234032729" expanded="true" signature="1840:1845" ph="..." />
+                <element signature="e#0#19#0" expanded="true" />
+                <marker date="1578565011835" expanded="true" signature="766:768" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Visualization/Plots/confusion_matrix.jpg">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ModelTraining/Classifiers.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-493">
+              <caret lean-forward="true" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -113,35 +126,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ModelTraining/Similarity.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Visualization/ConfusionMatrix.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-733">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="432">
+              <caret line="20" column="54" selection-start-line="20" selection-start-column="54" selection-end-line="20" selection-end-column="54" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Visualization/DatasetVisualization.py">
+        <entry file="file://$USER_HOME$/Library/Caches/PyCharm2018.2/python_stubs/1922785882/math.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="575">
-              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+            <state relative-caret-position="412">
+              <caret line="375" column="7" lean-forward="true" selection-start-line="375" selection-start-column="7" selection-end-line="375" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ModelTraining/Classifiers.py">
+        <entry file="file://$USER_HOME$/Library/Caches/PyCharm2018.2/python_stubs/1922785882/builtins.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-396">
-              <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+            <state relative-caret-position="281">
+              <caret line="3209" column="8" selection-start-line="3209" selection-start-column="8" selection-end-line="3209" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -149,53 +153,27 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ModelTraining/Preprocessing.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+            <state relative-caret-position="420">
+              <caret line="28" column="4" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/env.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ModelTraining/dataAnalysis.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="108" selection-start-column="108" selection-end-column="108" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Scripts/countClasses.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="8" column="45" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Scripts/getFeaturesFromSpotify.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="345">
+              <caret line="15" column="40" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
               <folding>
-                <element signature="e#0#19#0" expanded="true" />
-                <marker date="1578498604161" expanded="true" signature="2002:2007" ph="..." />
+                <element signature="e#0#57#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Scripts/firebase_database.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="783">
-              <caret line="29" column="39" selection-start-line="29" selection-start-column="39" selection-end-line="29" selection-end-column="39" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/Visualization/Plots/scatter_acoustic_energy.jpg">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
     </leaf>
@@ -240,7 +218,6 @@
         <option value="$PROJECT_DIR$/Scripts/data.json" />
         <option value="$PROJECT_DIR$/Data/DatabaseExports/data.json" />
         <option value="$PROJECT_DIR$/ModelTraining/Preprocessing.py" />
-        <option value="$PROJECT_DIR$/Visualization/DatasetVisualization.py" />
         <option value="$PROJECT_DIR$/ModelTraining/Classifiers.py" />
         <option value="$PROJECT_DIR$/Model/Track.py" />
         <option value="$PROJECT_DIR$/ModelTraining/Similarity.py" />
@@ -255,8 +232,9 @@
         <option value="$PROJECT_DIR$/Scripts/playlist_scrambler.py" />
         <option value="$PROJECT_DIR$/env.py" />
         <option value="$PROJECT_DIR$/ModelTraining/TensorFlow_Try.py" />
-        <option value="$PROJECT_DIR$/ModelTraining/dataAnalysis.py" />
         <option value="$PROJECT_DIR$/Scripts/getFeaturesFromSpotify.py" />
+        <option value="$PROJECT_DIR$/Visualization/DatasetVisualization.py" />
+        <option value="$PROJECT_DIR$/ModelTraining/dataAnalysis.py" />
       </list>
     </option>
   </component>
@@ -287,6 +265,11 @@
             <path>
               <item name="SpotifyReco" type="b2602c69:ProjectViewProjectNode" />
               <item name="SpotifyReco" type="462c0819:PsiDirectoryNode" />
+              <item name="Data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpotifyReco" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpotifyReco" type="462c0819:PsiDirectoryNode" />
               <item name="Model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -303,6 +286,12 @@
               <item name="SpotifyReco" type="b2602c69:ProjectViewProjectNode" />
               <item name="SpotifyReco" type="462c0819:PsiDirectoryNode" />
               <item name="Visualization" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpotifyReco" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpotifyReco" type="462c0819:PsiDirectoryNode" />
+              <item name="Visualization" type="462c0819:PsiDirectoryNode" />
+              <item name="Plots" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -362,20 +351,17 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="DBConnection" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="DatasetVisualization" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="SpotifyReco" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DatabaseMirror" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Visualization" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DatabaseMirror/DBConnection.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Visualization/DatasetVisualization.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -481,18 +467,18 @@
     </configuration>
     <list>
       <item itemvalue="Python.dataAnalysis" />
-      <item itemvalue="Python.DBConnection" />
       <item itemvalue="Python.CrawlSpotify" />
       <item itemvalue="Python.PlaylistScrambler" />
       <item itemvalue="Python.Similarity" />
+      <item itemvalue="Python.DatasetVisualization" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.dataAnalysis" />
+        <item itemvalue="Python.DatasetVisualization" />
         <item itemvalue="Python.Similarity" />
         <item itemvalue="Python.PlaylistScrambler" />
         <item itemvalue="Python.CrawlSpotify" />
-        <item itemvalue="Python.DBConnection" />
       </list>
     </recent_temporary>
   </component>
@@ -520,9 +506,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1680" y="0" width="2560" height="1440" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.5191939" visible="true" weight="0.06433678" />
-      <window_info id="Structure" order="1" sideWeight="0.48080614" side_tool="true" visible="true" weight="0.06433678" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.51843315" visible="true" weight="0.15289913" />
+      <window_info id="Structure" order="1" sideWeight="0.48156682" side_tool="true" visible="true" weight="0.15289913" />
       <window_info id="Favorites" order="2" sideWeight="0.50087106" side_tool="true" weight="0.13383637" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -535,15 +522,15 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.23941606" />
-      <window_info anchor="bottom" id="Python Console" order="12" weight="0.39781022" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.23941606" />
+      <window_info anchor="bottom" id="Python Console" order="12" visible="true" weight="0.36642337" />
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="13" weight="0.329927" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" sideWeight="0.49328214" visible="true" weight="0.07625099" />
+      <window_info anchor="right" id="SciView" order="3" sideWeight="0.686636" visible="true" weight="0.26290706" />
       <window_info anchor="right" id="Database" order="4" />
-      <window_info anchor="right" x="0" y="0" width="590" height="1240" id="Documentation" order="5" sideWeight="0.50671786" side_tool="true" visible="true" weight="0.07625099" />
+      <window_info anchor="right" x="0" y="0" width="590" height="1240" id="Documentation" order="5" sideWeight="0.31336406" side_tool="true" visible="true" weight="0.26290706" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -554,6 +541,13 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Visualization/DatasetVisualization.py</url>
+          <line>37</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">
@@ -570,12 +564,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file:///anaconda3/envs/SpotifyReco/lib/python3.6/site-packages/requests/models.py" />
-    <entry file="file:///anaconda3/envs/SpotifyReco/lib/python3.6/codecs.py" />
-    <entry file="file:///anaconda3/envs/SpotifyReco/lib/python3.6/site-packages/requests/api.py" />
-    <entry file="file://$PROJECT_DIR$/spotifyrec-36551-Tracks-export.json" />
-    <entry file="file:///anaconda3/envs/SpotifyReco/lib/python3.6/site-packages/sklearn/linear_model/stochastic_gradient.py" />
-    <entry file="file:///anaconda3/envs/SpotifyReco/lib/python3.6/site-packages/numpy/core/arrayprint.py" />
     <entry file="file:///anaconda3/envs/SpotifyReco/lib/python3.6/site-packages/matplotlib/axes/_axes.py" />
     <entry file="file://$USER_HOME$/Library/Caches/PyCharm2018.2/python_stubs/1601756973/numpy/core/_multiarray_umath.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -667,15 +655,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Visualization/Plots/num_of_songs_tempo.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Visualization/Plots/bars_multiple_features.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Visualization/Plots/scatter_acoustic_energy.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/Data/DatabaseExports/data.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1906">
@@ -762,30 +741,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ModelTraining/dataAnalysis.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="798">
-          <caret line="21" column="37" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#57#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ModelTraining/Classifiers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-396">
-          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ModelTraining/Preprocessing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Scripts/countClasses.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="232">
@@ -826,13 +781,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ModelTraining/Similarity.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/env.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -840,17 +788,94 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Visualization/DatasetVisualization.py">
+    <entry file="file://$USER_HOME$/Projects/virtualenvs/SpotifyReco/lib/python3.6/site-packages/pandas/plotting/_core.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+        <state relative-caret-position="262">
+          <caret line="1079" column="8" selection-start-line="1079" selection-start-column="8" selection-end-line="1079" selection-end-column="8" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Visualization/Plots/bars_multiple_features.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Visualization/Plots/num_of_songs_tempo.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Visualization/Plots/num_of_songs_energy.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Visualization/Plots/scatter_acoustic_energy.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/Visualization/ConfusionMatrix.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-733">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="96">
+          <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ModelTraining/Preprocessing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="4" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Visualization/Plots/DatasetVisualization.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Visualization/DatasetVisualization.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+            <marker date="1578565011835" expanded="true" signature="766:768" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Visualization/Plots/confusion_matrix.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ModelTraining/Classifiers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-493">
+          <caret lean-forward="true" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Caches/PyCharm2018.2/python_stubs/1922785882/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="3209" column="8" selection-start-line="3209" selection-start-column="8" selection-end-line="3209" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Caches/PyCharm2018.2/python_stubs/1922785882/math.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="412">
+          <caret line="375" column="7" lean-forward="true" selection-start-line="375" selection-start-column="7" selection-end-line="375" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ModelTraining/Similarity.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="20" column="54" selection-start-line="20" selection-start-column="54" selection-end-line="20" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ModelTraining/dataAnalysis.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="15" column="40" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#57#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

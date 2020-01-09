@@ -22,3 +22,20 @@ forestcf.train_classifier(dataset['training_set'], dataset['training_set_label']
 predicted = forestcf.test_classifier(dataset['test_set'])
 
 calculate_all_metrics(dataset['test_set_label'], predicted)
+
+plot_confusion_matrix(dataset['test_set_label'], predicted, classes=['Disliked', 'Liked'])
+
+# svg_cf = SVCClassifier()
+# svg_cf.train_classifier(dataset['training_set'], dataset['training_set_label'])
+# predicted = svg_cf.test_classifier(dataset['test_set'])
+# calculate_all_metrics(dataset['test_set_label'], predicted)
+
+# sequ_cf = SequentialClassifier()
+# sequ_cf.train_classifier(dataset['training_set'], dataset['training_set_label'])
+# predicted = sequ_cf.test_classifier(dataset['test_set'], dataset['test_set_label'])
+# calculate_all_metrics(dataset['test_set_label'], predicted)
+
+# k_neig = KNeighbours()
+# k_neig.train_knei_classifier(dataset['training_set'], dataset['training_set_label'])
+# predicted = k_neig.test_knei_classifier(dataset['test_set'], dataset['test_set_label'])
+# calculate_all_metrics(dataset['test_set_label'], predicted)

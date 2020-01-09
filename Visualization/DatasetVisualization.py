@@ -19,8 +19,8 @@ def scatter_plot_two_features(dataset, features):
     for i in range(len(dataset[features[0]])):
         ax.scatter(dataset[features[0]][i], dataset[features[1]][i], color=colors[dataset['liked'][i]])
     ax.set_title(features[0] + " -- " + features[1])
-    ax.set_ylabel(features[0])
-    ax.set_xlabel(features[1])
+    ax.set_ylabel(features[1])
+    ax.set_xlabel(features[0])
     ax.grid(True)
     plt.show()
 
@@ -37,7 +37,7 @@ def histo_plot_frequency(dataset, feature):
     """
     fig, ax = plt.subplots()
 
-    ax.hist(dataset[feature].to_string())
+    ax.hist(dataset[feature])
     ax.set_title('Number of Songs -- ' + feature)
     ax.set_xlabel(feature)
     ax.set_ylabel('Number of Songs')
@@ -82,9 +82,7 @@ def bar_plot_multiple_features(dataset):
     plt.show()
 
 
-dataset = pd.read_csv('./Data/file.csv')
+dataset = pd.read_csv('../Data/file.csv')
 print(dataset.head())
 
-# scatter_plot_two_features(dataset, ['acousticness', 'energy'])
-histo_plot_frequency(dataset, 'liked')
-# bar_plot_multiple_features(dataset)
+scatter_plot_two_features(dataset, ['energy', 'tempo'])
