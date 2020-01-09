@@ -1,13 +1,12 @@
 import requests
 import json
-
+from env import BEARER
 
 """Script to delete your Spotify saved tracks. Used to get status quo for creating a dataset.
 --- USE WITH CAUTION --- """
 
 ENDPOINT_GET_TRACKS = "https://api.spotify.com/v1/me/tracks"
 ENDPOINT_DELETE_TRACKS = "https://api.spotify.com/v1/me/tracks"
-BEARER = "BQDq49l2VSkM6dddmrgdFHAe_B3LFCWEZIXUvArXIYA7fGbGaGVyHHO_hkHURDMn7KGcfzBNNrkzB1jrABs3zvFX7A7T3TtQc3TuZXyM7sbjMm6y-ryGFmVOMBmeNWVx4EWFEJ66uuyfBHun6crrvEkewLgV10s8QJ291nhmSnpHGWGZhfejRPRBA9OmT2w0qIXi1Og5Efcs3ilsST8cbzazswZePPP3xbEv617ToAieJJlUIRJwFjz39rPkSgFz2toj2Jbe0NF_gMa4qFg"
 headers = {"Authorization": "Bearer " + BEARER}
 
 

@@ -1,10 +1,10 @@
 import requests
+from env import BEARER
 
 '''Script to move a playlist to saved tracks'''
 
 SAVE_TRACK_ENDPOINT = "https://api.spotify.com/v1/me/tracks"
 GET_PLAYLIST_TRACKS_ENDPOINT = "https://api.spotify.com/v1/playlists/{playlist_id}/tracks"
-BEARER = "BQAhxkN2nmmn4ZVCEiQi25_bLAnQgpwKXz8wIhNlL1reLiclLVPIDQJtiAlkAw3OzTXA9Qos4eUsQpdJW_A1jXXVJLOgunzlKuMw8pwGCzr68udjl4cENYGWhEGPDGlJT9S55LjVtJh6kvW8iDMjFriSuXrHmYqaaTDZHtdbmBolQ6paqZPh4BrRNrSxnxSLs1AB3WmoFDTUgJrdIgvIgt4vDOkLG8B2TilzPzuN8E_-T9VD98Dp4YpaqmuXSXl2ohBzyJP_ZO6I8cTjpBs"
 headers = {"Authorization": "Bearer " + BEARER}
 
 track_ids = []

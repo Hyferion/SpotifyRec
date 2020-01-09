@@ -7,6 +7,3 @@ def count_classes():
     neg = df[df.liked == False]
     print("Liked: " + str(len(pos.index)))
     print("Disliked: " + str(len(neg.index)))
-
-
-count_classes()

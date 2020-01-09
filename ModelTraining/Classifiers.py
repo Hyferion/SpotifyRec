@@ -18,6 +18,11 @@ class BaseClassifier:
         print(predicted)
         return predicted
 
+    def test_classifier_probability(self, test_set):
+        predicted = self.classifier.predict_proba(test_set)
+        print(predicted)
+        return predicted
+
 
 class KNeighbours(BaseClassifier):
     def __init__(self):

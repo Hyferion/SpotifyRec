@@ -1,0 +1,2 @@
+'''The token has to be manually aquired from https://developer.spotify.com/console/get-audio-features-track/'''
+BEARER = "BQASF2caH1fXx0K5CVCj-NhmgrBru7V3DJJaOjftWvJIV605FINYYsHSAOfPq_ZI_GwX76He_RwrkbGUHGZ1pzxEx0Tvf_xQOBx0Zls8YAI4I3gHjUHvp1nhuVoWzQhnfbtPh6eiVPPhMeOvMmzBjY_CcST_VrDXz-x0b_eig1XC0GEIrEeFA85MYuzWo6Ptc-PWYfvfGfALPL8g2aclQCHzXTXeOvjm9VdEnZ_47B1T1XVE3XqifA95Y2IqpobB9bBLcm_AomlekaUO_pI"

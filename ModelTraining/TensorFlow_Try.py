@@ -1,4 +1,6 @@
 from tensorflow import keras
+
+from ModelTraining.Preprocessing import split_dataset
 from ModelTraining.dataAnalysis import read_csv_to_df
 import tensorflow as tf
 import numpy as np
@@ -7,7 +9,7 @@ print(tf.version.VERSION)
 print(tf.keras.__version__)
 
 df = read_csv_to_df("./Data/file.csv")
-sets = split_df(54, df)
+sets = split_dataset(54, df)
 training_set = sets['training_set']
 print(training_set.shape)
 training_set_label = sets['training_set_label']

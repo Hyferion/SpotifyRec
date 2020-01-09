@@ -1,11 +1,10 @@
 import pandas as pd
 import requests
+from env import BEARER
 
-from Scripts.read_database import read_database
-from Scripts.read_json_for_user import read_json_for_user
+from Scripts.firebase_database import read_json_for_user, read_database
 
 ENDPOINT_TRACK_FEATURE = "https://api.spotify.com/v1/audio-features"
-BEARER = "BQBZ5MwauBoRR-fTxYTHOuGZngirK2R-N1QcTPIazdMEIffsyIijxNbr6jXi7p7pDhJY0dvgHvY0Gy2NVCG1JhWUKTYMnmEGegdH6tzJW3kUL1fBtBqtFDd2mnwSzGT6FiN2UD4gmt4025uMwv3VfSnFCuCuKCdVz66AEO15l6ra3nBrkkQqY6oAVthHSdIrNETAY2bsnP8U8Nu6tjIhmVeVWRTiDF0bMMZxcljNZnXfgpT8PH2ijhifDwsf3vbzTP28H2r3lSHckx-Rxzo"
 headers = {"Authorization": "Bearer " + BEARER}
 
 
@@ -49,7 +48,8 @@ def send_request(collectedTracks, likedict):
     audio_features = response['audio_features']
     for audio in audio_features:
         dictio = {}
-        dictio['liked'] = likedict[audio['id']]
+        if likedict:
+            dictio['liked'] = likedict[audio['id']]
         for feature in list_of_features:
             dictio[feature] = audio[feature]
 
@@ -64,8 +64,9 @@ def save_list_to_csv(finalList):
     df.to_csv("../Data/file.csv", sep=',', index=False)
 
 
-read_database()
-collectedTracks = read_json_for_user("data.json", "1112101592")
-likedict = create_liked_dict(collectedTracks)
-finalList = get_features_for_tracks(collectedTracks, likedict)
-save_list_to_csv(finalList)
+def create_csv_from_database():
+    read_database()
+    collectedTracks = read_json_for_user("data.json", "1112101592")
+    likedict = create_liked_dict(collectedTracks)
+    finalList = get_features_for_tracks(collectedTracks, likedict)
+    save_list_to_csv(finalList)

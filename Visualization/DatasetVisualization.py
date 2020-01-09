@@ -85,6 +85,6 @@ def bar_plot_multiple_features(dataset):
 dataset = pd.read_csv('./Data/file.csv')
 print(dataset.head())
 
-#scatter_plot_two_features(dataset, ['acousticness', 'energy'])
+# scatter_plot_two_features(dataset, ['acousticness', 'energy'])
 histo_plot_frequency(dataset, 'liked')
-#bar_plot_multiple_features(dataset)
+# bar_plot_multiple_features(dataset)
